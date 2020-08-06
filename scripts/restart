@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-source "$HOME/.include/script/menu.sh"
-source "$HOME/.include/script/system.sh"
+import_module "menu"
+import_module "system"
 
 yes_or_no="$(menu_confirm "Restart your system?")"
 

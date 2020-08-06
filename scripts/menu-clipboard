@@ -14,10 +14,10 @@
 # 192.168.1.1 # my office pc static ip
 # Logitech G502 # moush that i always forget the name
 
-source "$HOME/.include/script/notification.sh"
-source "$HOME/.include/script/menu.sh"
-source "$HOME/.include/script/clipboard.sh"
-source "$HOME/.include/script/rice_file.sh"
+import_module "notification"
+import_module "menu"
+import_module "clipboard"
+import_module "rice_file"
 
 if [ ! -f "$QUICK_CLIPBOARD_REGULAR" ]; then
     notification_send_error "File "$QUICK_CLIPBOARD_REGULAR" doesn't exists."
