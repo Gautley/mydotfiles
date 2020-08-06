@@ -10,6 +10,11 @@ menu_select_item() {
     | _rofi "option-list-theme.rasi"
 }
 
+menu_confirm() {
+    echo -e "yes\nno"\
+    | _rofi "prompt-theme.rasi" "$1"
+}
+
 menu_input() {
     _rofi "type-theme.rasi" "$1"
 }

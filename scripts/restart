@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+source "$HOME/.include/script/menu.sh"
+source "$HOME/.include/script/system.sh"
+
+yes_or_no="$(menu_confirm "Restart your system?")"
+
+[[ $yes_or_no = "yes" ]] && system_restart
